@@ -82,4 +82,15 @@
             >;
         };
     };
+
+    combos {
+        compatible = "zmk,combos";
+        combo_layers {
+            combo_0 {
+                timeout-ms = <50>;
+                key-positions = <21 27>; // Key positions for LOWER and RAISE
+                bindings = <&mo 3>;  // Activate the adjust layer when both LOWER and RAISE are pressed
+            };
+        };
+    };
 };
