@@ -2,14 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: lvgl
+      url-base: https://github.com/lvgl
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: lvgl
-      remote: zmkfirmware
-      revision: master
+      remote: lvgl
+      revision: v8.3.0
       path: modules/lib/gui/lvgl
   self:
     path: config
