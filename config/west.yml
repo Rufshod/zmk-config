@@ -9,7 +9,7 @@ manifest:
       import: app/west.yml
     - name: lvgl
       remote: zmkfirmware
-      revision: release/v7
+      revision: master
       path: modules/lib/gui/lvgl
   self:
     path: config
