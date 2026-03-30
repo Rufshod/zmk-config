@@ -6,7 +6,9 @@
       "Read(//c/Repo/**)",
       "Bash(gh search:*)",
       "Bash(gh api:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(find /c/Repo/zmk-config -type f \\\\\\(-name *.overlay -o -name *.dtsi \\\\\\))",
+      "Bash(find /c/Repo/zmk-config -type f \\\\\\(-name *.c -o -name *.h \\\\\\))"
     ]
   }
 }
